@@ -10,7 +10,7 @@
     >
       <h2>Let's Talk about <br>your project</h2>
       <p>Ready to to take it to the next level? Contact us today and find out how our expertise can help you grow your business</p>
-      <v-btn class="button2" x-large>GET IN TOUCH</v-btn>
+      <v-btn class="button2" x-large nuxt to="/contact">GET IN TOUCH</v-btn>
     </v-card>
   </div>
 </template>
@@ -40,12 +40,13 @@ p{
 }
 
 .card-cta{
-  margin-top: 20rem;
+  margin-top: 8rem;
   margin-left: 3rem;
 
   padding-bottom: 5rem;
-  /* z-index: -0.5;
-  position: unset; */
+  /* position: relative; */
+  z-index: -0.5;
+  position: unset;
 
 
 

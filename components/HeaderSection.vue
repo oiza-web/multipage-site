@@ -1,6 +1,9 @@
 <template>
 <nav class="navbar">
-  <div class="brand-title" v-if="mobileView" @click="toggle = !toggle"> <router-link to="/" tag="div">THEBRANDNAME </router-link></div>
+  <div class="brand-title" v-if="mobileView" @click="toggle = !toggle">
+    <nuxt-link to="/" tag="div"><v-img height="8vh" width="10vh" src="logo.png"></v-img></nuxt-link>
+
+  </div>
         <a href="#" class="toggle">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -11,7 +14,7 @@
             <li> <nuxt-link to="/Company"> Our Company</nuxt-link></li>
             <li><nuxt-link to="/Location">Locations</nuxt-link></li>
             <li><nuxt-link to="/Contact"> Contact</nuxt-link></li>
-            <li><nuxt-link to="/Services"> Services</nuxt-link></li>
+            <!-- <li><nuxt-link to="/Services"> Services</nuxt-link></li> -->
 
         </ul>
         </div>
@@ -51,7 +54,7 @@ body {
 
 .brand-title {
     font-size: 1.5rem;
-    margin: .5rem;
+    /* margin: .1rem; */
     font-weight: bold;
     color: rgb(29, 29, 31);
 }

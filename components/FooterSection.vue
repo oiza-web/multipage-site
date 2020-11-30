@@ -19,12 +19,6 @@
 
     </div>
     </div>
-
-
-
-
-
-
   </v-footer>
 </div>
 
@@ -46,7 +40,7 @@ h3{
   color: white;
   font-size: 1.5em;
   margin-left: 5em;
-  margin-top: 8em;
+  margin-top: .5em;
 
 }
 h4{
