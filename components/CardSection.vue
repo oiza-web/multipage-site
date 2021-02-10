@@ -1,41 +1,47 @@
 <template>
-  <v-col align-self="center">
-    <v-row>
-      <v-card rounded="xl"
+<v-container fluid>
+  <v-layout row>
+  <v-flex xs12 md4 d-flex flex-column lg-6  >
+  <v-card rounded="xl"
               height="40%"
               width="80%"
-              class="card1">
+              class="card1"
+              >
 
-        <v-img height="40vh" src="../assets/images/card1.jpeg">
+        <v-img height="40vh" src="card1.jpeg">
 
-        <v-card-title class="card-text"> WEB DESIGN</v-card-title>
+        <v-card-title class="card-text"> <nuxt-link to='/webdesign' >WEB DESIGN</nuxt-link> </v-card-title>
         </v-img>
       </v-card>
-    </v-row>
-    <v-row >
-      <v-card rounded="xl"
+  </v-flex>
+  <v-flex xs12 md4 d-flex flex-row lg-3 d-flex-wrap>
+  <v-card rounded="xl"
               height="40%"
               width="80%"
               class="card2">
 
-        <v-img height="40vh" src="../assets/images/card2.jpeg">
+        <v-img height="40vh" src="card2.jpeg">
           <v-card-title class="card-text"> APP  DESIGN</v-card-title>
         </v-img>
       </v-card>
-    </v-row>
-    <v-row >
-      <v-card rounded="xl"
+  </v-flex>
+  <v-flex xs12 md4 d-flex flex-row lg-3 flex-wrap>
+  <v-card rounded="xl"
               height="40%"
               width="80%"
               class="card3">
-        <v-img  height="40vh" src="../assets/images/card3.jpeg">
 
-        <v-card-title class="card-text1"> GRAPHIC DESIGN</v-card-title>
+        <v-img  height="40vh" src="card3.jpeg">
+
+        <v-card-title class="card-text1"> GRAPHIC  DESIGN</v-card-title>
         </v-img>
 
       </v-card>
-    </v-row>
-  </v-col>
+  </v-flex>
+  </v-layout>
+</v-container>
+
+
 </template>
 
 <script>
@@ -46,35 +52,33 @@ export default {
 
 <style scoped>
 .card1{
-  margin-top: 3rem;
-  margin-left: 4rem;
-  background-image: '../assets/images/asset3.jpeg';
+  margin :5% 10%;
+  background-image: 'asset3.jpeg';
 }
 .card2{
-  margin-top: 3rem;
-  margin-left: 4rem;
+    margin :5% 10%;
 }
 .card3{
-  margin-top: 3rem;
-  margin-left: 4rem;
+    margin :5% 10%;
 }
 
 .card-text{
   color: white;
-  margin-top: 5.5rem;
-  margin-left: 3em;
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  font-weight: 400;
+  justify-content: center;
+  align-content: center;
+  font-size: 1em;
 }
 
 .card-text1{
   color: white;
-  margin-top: 5.5rem;
-  margin-left: 1.3rem;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  font-weight: 400;
+  justify-content: center;
+  align-content: center;
+  font-size: 1em;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 </style>
 

@@ -1,11 +1,14 @@
 <template>
 <div>
   <v-footer class="footer" color="rgb(29, 29, 31)" height="1000%">
-    <div>
+   <div class="flex">
       <h3>THEBRANDNAME</h3>
-    <h4 class="spacing1">OUR COMPANY</h4>
-    <h4 class="spacing"> OUR LOCATION</h4>
-    <h4 class="spacing">OUR SERVICES</h4>
+      <div>
+
+        <h4 class="spacing"> OUR LOCATION</h4>
+        <h4 class="spacing">OUR SERVICES</h4>
+      </div>
+      </div>
     <p>Address</p>
     <p>Lorem ipsum dolor sit, amet <br> consectetur adipisicing.</p>
     <p>Address</p>
@@ -17,14 +20,8 @@
       <v-icon color="rgb(232, 129, 108)">mdi-pinterest</v-icon>
       <v-icon color="rgb(232, 129, 108)">mdi-instagram</v-icon>
 
+
     </div>
-    </div>
-
-
-
-
-
-
   </v-footer>
 </div>
 
@@ -46,7 +43,7 @@ h3{
   color: white;
   font-size: 1.5em;
   margin-left: 5em;
-  margin-top: 8em;
+  margin-top: .5em;
 
 }
 h4{
@@ -72,5 +69,8 @@ p{
 .icons{
   margin-left: 7em;
   justify-content: space-around;
+}
+.flex{
+  display: flex;
 }
 </style>

@@ -15,4 +15,11 @@ export default {
 
 <style>
 
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap'); */
+
+* {
+    box-sizing: border-box;
+}
+
+
 </style>

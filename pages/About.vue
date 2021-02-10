@@ -47,7 +47,17 @@
   </v-flex>
   </v-layout>
 </v-container>
-
+<v-container>
+      <v-layout row>
+        <v-flex xs12 md6 >
+        <v-img src="femaledeveloper.jpeg"></v-img>
+        </v-flex>
+        <v-flex xs12 md6 class="color2">
+          <h1 class="color3">About Us</h1>
+          <p class="color4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eum cul</p>
+        </v-flex>
+      </v-layout>
+</v-container>
   <call-action></call-action>
   </div>
 

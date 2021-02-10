@@ -1,10 +1,13 @@
 <template>
 <div>
-<hero-section></hero-section>
-<card-section></card-section>
-<avatar-section></avatar-section>
-<call-action></call-action>
-<footer-section></footer-section>
+
+    <hero-section></hero-section>
+    <card-section></card-section>
+    <avatar-section></avatar-section>
+    <call-action></call-action>
+    <footer-section></footer-section>
+  
+
 </div>
 </template>
 

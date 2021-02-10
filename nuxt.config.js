@@ -4,6 +4,7 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
+  ssr : false,
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - multiple_page_website',
@@ -24,6 +25,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -37,7 +39,11 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    '@nuxtjs/axios'
   ],
+  axios: {
+    baseURL: 'https://jsonplaceholder.typicode.com/'
+  },
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
