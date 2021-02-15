@@ -7,9 +7,7 @@
               width="80%"
               class="card1"
               >
-
         <v-img height="40vh" src="card1.jpeg">
-
         <v-card-title class="card-text"> <nuxt-link to='/webdesign' >WEB DESIGN</nuxt-link> </v-card-title>
         </v-img>
       </v-card>

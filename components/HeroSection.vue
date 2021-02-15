@@ -11,21 +11,6 @@
   </div>
 </div>
 </v-container>
-
-  <!-- <v-banner > -->
-
-  <!-- <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate alias libero quia dolore, a quasi! Impedit ipsa odio sit quae alias explicabo tempora itaque quas?</p>
-  <v-btn class="button" x-large elevation="0" to="/about" nuxt>Learn more</v-btn>
-  <div>
-    <v-img src="asset2.jpeg" class="image" color="rgb(232, 129, 108)"
-  height="40%" outlined >
-
-  </v-img>
-  </div> -->
-
-
-  <!-- </v-banner> -->
 </template>
 
 <script>

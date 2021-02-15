@@ -56,7 +56,7 @@ button{
   margin: 5% 38%;
   /* margin-bottom: 15px; */
 }
-
+button:focus {outline:0;}
 
 
 </style>

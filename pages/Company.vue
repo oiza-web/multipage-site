@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <v-container>
-      <v-layout row>
+  <v-container fluid>
+    <v-layout row>
         <v-flex xs12 md6 class="color">
           <h1>About Us</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eum culpa eius doloremque, accusantium necessitatibus est a veniam natus deleniti!</p>
@@ -10,8 +9,8 @@
           <v-img src="asset1.jpeg"></v-img>
         </v-flex>
       </v-layout>
-</v-container>
-<v-container>
+
+
       <v-layout row>
         <v-flex xs12 md6 >
         <v-img src="femaledeveloper.jpeg"></v-img>
@@ -21,8 +20,8 @@
           <p class="color4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eum cul</p>
         </v-flex>
       </v-layout>
-</v-container>
-<v-container class="avatar">
+
+<v-container fluid class="avatar">
   <v-layout row>
   <v-flex xs12 md4>
     <v-avatar size="100"  class="mt">
@@ -47,9 +46,11 @@
   </v-flex>
   </v-layout>
 </v-container>
+            <call-action></call-action>
+  </v-container>
 
-  <call-action></call-action>
-  </div>
+
+
 
 
 </template>
