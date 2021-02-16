@@ -5,8 +5,8 @@
     <card-section></card-section>
     <avatar-section></avatar-section>
     <call-action></call-action>
-    <footer-section></footer-section>
-  
+   
+
 
 </div>
 </template>

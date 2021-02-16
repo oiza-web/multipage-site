@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container>
+    <v-container fluid>
       <v-layout row>
         <v-flex xs12 md6 class="color">
           <h1>Contact Us</h1>

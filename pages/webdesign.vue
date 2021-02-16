@@ -51,7 +51,7 @@
   </div>
   <div>
     <call-action></call-action>
-    <footer-section></footer-section>
+    <!-- <footer-section></footer-section> -->
   </div>
   </div>
 
