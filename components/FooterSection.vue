@@ -34,7 +34,7 @@ export default {
 
 .footer{
   background-color: black;
-  height: 50%;
+  height: 60%;
   color: white;
 }
 a{

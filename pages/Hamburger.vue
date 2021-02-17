@@ -32,7 +32,7 @@ a {
 
 .header ul {
   margin: 0;
-  padding: 0.4%;
+  padding: 0;
   list-style: none;
   overflow: hidden;
   /* background-color: #fff; */
@@ -55,7 +55,7 @@ a {
   display: block;
   float: left;
   font-size: 2em;
-  padding: 2%;
+  /* padding: 10px 20px; */
   text-decoration: none;
   cursor: pointer;
 }
