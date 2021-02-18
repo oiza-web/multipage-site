@@ -77,21 +77,21 @@
     <v-img src="undraw_Mobile_app_p3ts.svg"></v-img>
     </v-avatar>
     <h5>NETHELANDS</h5>
-    <v-btn rounded class="button" color="rgb(232, 129, 108)" to="/Location" nuxt>LOCATION</v-btn>
+    <v-btn rounded class="button" color="rgb(232, 129, 108)"  nuxt>LOCATION</v-btn>
   </v-flex>
   <v-flex xs12 md4>
     <v-avatar size="100"  class="mt">
       <v-img src="undraw_Mobile_app_p3ts.svg"></v-img>
     </v-avatar>
     <h5>CANADA</h5>
-    <v-btn class="button" rounded color="rgb(232, 129, 108)" to="/Location" nuxt>LOCATION</v-btn>
+    <v-btn class="button" rounded color="rgb(232, 129, 108)"  nuxt>LOCATION</v-btn>
   </v-flex>
   <v-flex xs12 md4>
     <v-avatar size="100"  class="mt">
       <v-img src="undraw_Mobile_app_p3ts.svg"></v-img>
     </v-avatar>
     <h5>NIGERIA</h5>
-  <v-btn class="button" rounded color="rgb(232, 129, 108)" to="/Location" nuxt>LOCATION</v-btn>
+  <v-btn class="button" rounded color="rgb(232, 129, 108)"  nuxt>LOCATION</v-btn>
   </v-flex>
   </v-layout>
 </v-container>
