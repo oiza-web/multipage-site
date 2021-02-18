@@ -10,7 +10,7 @@
       <h2>Let's Talk about <br>your project</h2>
       <p>Ready to to take it to the next level? Contact us today and find out how our expertise can help you grow your business</p>
       <!-- <v-btn class="button2" x-large nuxt to="/contact">GET IN TOUCH</v-btn> -->
-      <button>Get In Touch</button>
+      <nuxt-link to="/contact"><button>Get In Touch</button></nuxt-link>
     </v-card>
   </v-container>
 </template>
@@ -22,23 +22,27 @@ export default {
 </script>
 
 <style scoped>
+a{
+  text-decoration: none;
+}
 h2{
   color: white;
   text-align: center;
   font-size: 2.1rem;
   font-weight: bold;
-  padding: 4%;
+  padding: 2%;
   /* letter-spacing: 0.1rem; */
 }
 p{
   color: white;
   text-align: center;
+  padding: 3%;
 
 }
 
 .card-cta{
   margin: 2% 10%;
-  padding-bottom: 5rem;
+  padding: 10%;
   font-weight: 400;
 }
 
@@ -53,10 +57,32 @@ button{
   font-weight: bold;
   color: rgba(248, 99, 0, 0.45);
   box-shadow: 0 0 0 2px  inset;
-  margin: 5% 38%;
+  margin: 5% 15%;
   /* margin-bottom: 15px; */
 }
 button:focus {outline:0;}
 
+@media (min-width: 600px) {
+  button {
+    margin: 5% 35%;
+  }
+  .background{
+    padding-top: 5%;
+  }
+}
 
+
+@media (min-width: 940px) {
+  button {
+    margin: 0 35%;
+
+  }
+
+  p{
+    font-size: 1.2em;
+    font-weight: 650;
+  }
+
+
+}
 </style>

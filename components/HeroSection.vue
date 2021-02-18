@@ -7,7 +7,7 @@
   </div>
 
   <div>
-    <button>Learn More</button>
+    <nuxt-link to="/contact"><button>Learn More</button></nuxt-link>
   </div>
 </div>
 </v-container>
@@ -67,14 +67,18 @@ button{
   background-size: 100% 100%;
   box-shadow: 0 0 0 2px  inset;
   margin: 0 25%;
+}
 
-  /* margin-bottom: 15px; */
-
+a{
+  text-decoration: none;
 }
 
 @media (min-width: 600px) {
   button {
     margin: 0 35%;
+  }
+  .background{
+    padding-top: 5%;
   }
 }
 

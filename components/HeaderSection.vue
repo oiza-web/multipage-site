@@ -8,7 +8,7 @@
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
             <li> <nuxt-link to="/Company"> Our Company</nuxt-link></li>
-            <li><nuxt-link to="/Location">Locations</nuxt-link></li>
+            <li><nuxt-link to="/webdesign">Services</nuxt-link></li>
             <li><nuxt-link to="/Contact"> Contact</nuxt-link></li>
       </ul>
 </header>
@@ -25,7 +25,7 @@ a {
 .header {
   background-color: #fff;
   /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 3;
 }
@@ -54,7 +54,6 @@ a {
 .header .logo {
   display: block;
   float: left;
-  font-size: 2em;
   padding: 2%;
   text-decoration: none;
   cursor: pointer;
@@ -76,7 +75,7 @@ a {
   float: right;
   padding: 28px 20px;
   position: relative;
-  user-select: none;
+  /* user-select: none; */
 }
 
 .header .menu-icon .navicon {

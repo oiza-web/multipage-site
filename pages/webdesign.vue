@@ -1,14 +1,34 @@
 <template>
-  <div>
-  <v-banner color="rgb(232, 129, 108)" height="300" outlined >
-    <h2>Web Design</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate alias libero quia dolore, a quasi! Impedit ipsa odio sit quae alias explicabo tempora itaque quas?</p>
-  </v-banner>
-  <div>
+<v-container fluid>
+  <v-card rounded="xl"
+              height="50%"
+              width="90%"
+              class="card1"
+              >
+        <v-img height="40vh" src="card1.jpeg">
+        <v-card-title> <nuxt-link to='/webdesign' class="title" >WEB DESIGN</nuxt-link> </v-card-title>
+        <h4 class="title">we make explicit designs for your ideas, let's help recreate your ideas now!</h4>
+        </v-img>
+      </v-card>
+    <div>
+      <div>
+        <VueSlickCarousel v-bind="settings">
+          <div><img  src="../assets/images/site3.png" height="600px" width="100%" ></div>
+          <div><img src="../assets/images/site1.png"  height="600px" width="100%"></div>
+          <div><img  src="../assets/images/site3.png" height="600px" width="100%"  ></div>
+          <div><img src="../assets/images/site1.png" height="600px" width="100%"></div>
+          <!-- <div><img width="90%" src="site2.png" ></div>
+          <div><img width="90%" src="site3.png" ></div> -->
+        </VueSlickCarousel>
+      </div>
 
-    <Photo v-for="url in photos" :key="url.id"
+
+
+
+
+    <!-- <Photo v-for="url in photos" :key="url.id"
                                 :id ="url.id"
-                                :url ="url.url"/>
+                                :url ="url.url"/> -->
     <!-- <v-card rounded="xl"
               height="40%"
               width="80%"
@@ -19,21 +39,20 @@
           <!-- <v-card-title class="card-text"> APP  DESIGN</v-card-title> -->
         <!-- </v-img> -->
       <!-- </v-card> -->
-  </div>
+
   <div>
-    <v-col>
-    <v-row >
+    <v-row>
+    <v-col  md="6">
       <v-card rounded="xl"
               height="40%"
               width="80%"
-              class="card2">
-
+              class="card3">
         <v-img height="40vh" src="card2.jpeg">
-          <v-card-title class="card-text"> APP  DESIGN</v-card-title>
+          <v-card-title class="card-text" > APP DESIGN</v-card-title>
         </v-img>
       </v-card>
-    </v-row>
-    <v-row >
+    </v-col>
+    <v-col md="6">
       <v-card rounded="xl"
               height="40%"
               width="80%"
@@ -45,8 +64,8 @@
         </v-img>
 
       </v-card>
-    </v-row>
     </v-col>
+    </v-row>
 
   </div>
   <div>
@@ -54,22 +73,41 @@
     <!-- <footer-section></footer-section> -->
   </div>
   </div>
+</v-container>
+
 
 
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import axios from 'axios';
 import Photo from '../components/Photo';
 // import { mapGetters, mapActions} from 'vuex';
 export default {
-  components:{
-    Photo
-  },
-  data(){
+
+    components: { VueSlickCarousel },
+  // components:{
+  //   Photo
+  // },
+  data() {
     return{
-      photos : []
+      settings: {
+          "arrows": false,
+          "dots": true,
+          "infinite": true,
+          "slidesToShow": 1,
+          "slidesToScroll": 1,
+          "autoplay": true,
+          "speed": 2000,
+          "autoplaySpeed": 2000,
+          "cssEase": "linear"
+      },
+      // photos : []
     }
+
   },
   async created(){
     const config = {
@@ -90,48 +128,59 @@ export default {
   }
 
   }
-  // computed: mapGetters(['allImages']),
-  // methods:{
-  //   ...mapActions(['fetchImages']),
-  //   fetchImages(){
-  //     this.fetchImages();
-  //   }
+
 </script>
 
 <style scoped>
+.banner{
+  margin: 6% 2%;
+  border-radius: 10px;
+}
 h2{
   color: white;
+  text-align: center;
+  margin: 10% 5%;
 }
 
 p{
   color: white;
-  margin-top: 3rem;
+  margin-top: 2%;
+  font-weight: 600;
+  font-size: 1.2em;
 }
 
 .card-text{
   color: white;
-  margin-top: 5.5rem;
-  margin-left: 3em;
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
+  margin: 40% 2%;
+  text-align: center;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .card-text1{
   color: white;
-  margin-top: 5.5rem;
-  margin-left: 1.3rem;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 40% 2%;
+  font-size: 1rem;
   font-weight: 400;
 }
 
-.card2{
-  margin-top: 3rem;
-  margin-left: 4rem;
-}
 .card3{
-  margin-top: 3rem;
-  margin-left: 4rem;
+    margin :8% 10%;
+    color: white;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.card1{
+  margin: 8%  5% 2% 5%;
+}
+.title{
+  margin: 5% 2%;
+  color: white;
+
+}
+
 </style>
